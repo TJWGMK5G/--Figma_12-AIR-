@@ -667,6 +667,9 @@ h6 {
 }
 .header {
   margin-bottom: 35px;
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
 }
 .header-adaptiv-block {
   display: none;
@@ -921,6 +924,7 @@ h6 {
   margin-bottom: 36px;
 }
 .main-calc-content-block-small-items-item {
+  margin-right: 25px;
 }
 .main-calc-content-block-small-items-item-title {
   font-weight: 600;
@@ -975,6 +979,44 @@ h6 {
   padding: 12px 15px;
   border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
+.main-selection {
+}
+
+.main-selection-content {
+}
+.main-selection-content-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.main-selection-content-title-items {
+  display: flex;
+}
+.main-selection-content-title-items-item {
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 10px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+}
+.main-selection-content-title-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 10px;
+  cursor: pointer;
+  font-weight: 600;
+
+  width: 150px;
+  height: 32px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+}
+.main-selection-content-title-btn-picture {
+  margin: 0px 5px;
+}
 
 @media (max-width: 1300px) {
   .header-mid-content-logo {
@@ -1010,7 +1052,6 @@ h6 {
     margin-bottom: 8px;
   }
 }
-
 @media (max-width: 1024px) {
   .header-top,
   .header-mid,
@@ -1065,13 +1106,47 @@ h6 {
     right: 0;
     top: 0;
   }
+  .main-title {
+    margin-bottom: 15px;
+  }
+  .main-compres-title {
+    margin-bottom: 15px;
+  }
+  .main-calc-content-block {
+    flex-direction: column;
+  }
+  .main-calc-content-block-solution {
+    margin: 0;
+  }
 }
-
+@media (max-width: 768px) {
+  .main-calc-content-title {
+    font-size: 25px;
+  }
+  .main-calc-content-block-small-items {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .main-calc-content-block-small-items-item {
+    margin: 0px 0px 30px 0px;
+  }
+  .main-calc-content-block-small-items-item-text {
+    margin-bottom: 10px;
+  }
+}
 @media (max-width: 550px) {
   .header-adaptiv-block {
     flex-direction: column;
   }
   .header-adaptiv-block-logo {
     margin-bottom: 15px;
+  }
+}
+@media (max-width: 425px) {
+  .main-title-content ul {
+    flex-direction: column;
+  }
+  .main-title-content ul li {
+    margin-bottom: 8px;
   }
 }
