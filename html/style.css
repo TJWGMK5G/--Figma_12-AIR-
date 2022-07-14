@@ -1131,8 +1131,8 @@ h6 {
 }
 
 .main-content-side-info-cost-producer-items {
+  cursor: pointer;
   display: flex;
-
   margin-bottom: 16px;
 }
 .main-content-side-info-cost-producer-items-block {
@@ -1220,6 +1220,7 @@ h6 {
 }
 
 .main-content-side-voltage-buttons-items {
+  cursor: pointer;
   margin-bottom: 15px;
   display: flex;
 }
@@ -1261,6 +1262,7 @@ h6 {
 }
 
 .main-content-side-info-volume-items {
+  cursor: pointer;
   display: flex;
   margin-bottom: 16px;
 }
@@ -1289,6 +1291,7 @@ h6 {
 }
 
 .main-content-side-info-type-items {
+  cursor: pointer;
   display: flex;
   margin-bottom: 16px;
 }
@@ -1309,6 +1312,7 @@ h6 {
 }
 
 .main-content-side-info-tires-items {
+  cursor: pointer;
   display: flex;
   margin-bottom: 16px;
 }
@@ -1329,6 +1333,7 @@ h6 {
 }
 
 .main-content-side-info-grease-items {
+  cursor: pointer;
   display: flex;
   margin-bottom: 16px;
 }
@@ -1348,6 +1353,7 @@ h6 {
 }
 
 .main-content-side-info-outputs-items {
+  cursor: pointer;
   display: flex;
   margin-bottom: 16px;
 }
@@ -1367,6 +1373,7 @@ h6 {
 }
 
 .main-content-side-info-motor-items {
+  cursor: pointer;
   display: flex;
   margin-bottom: 16px;
 }
@@ -1478,12 +1485,18 @@ h6 {
   margin-right: 8px;
 }
 .main-content-side-thing-item-tags-arrow {
-  padding: 2px 16px;
+  position: relative;
+  z-index: 2;
+  width: 36px;
+  height: 28px;
   border: 1px solid #d3d3d3;
   border-radius: 5px;
   cursor: pointer;
 }
 .main-content-side-thing-item-tags-arrow img {
+  position: absolute;
+  z-index: 5;
+  transform: translate(65%, 35%);
   width: 15px;
   height: 15px;
 }
@@ -1533,15 +1546,48 @@ h6 {
   font-weight: 700;
   font-size: 16px;
   color: #ffffff;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 10px;
   cursor: pointer;
   border-radius: 5px;
-  width: 100%;
   background-color: #bc0000;
+  width: 60%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+}
+.main-content-side-thing-item-under-buy:hover {
+  transition: 0.3s ease;
+  background-color: rgb(237, 28, 28);
+  -webkit-box-shadow: 0px 0px 14px 0px rgb(0 0 0 / 20%);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 14px 0px rgb(0 0 0 / 20%);
+}
+.main-content-side-thing-item-under-favorite,
+.main-content-side-thing-item-under-add {
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s ease;
+}
+.main-content-side-thing-item-under-favorite {
   margin-right: 8px;
+}
+.main-content-side-thing-item-under-favorite:hover,
+.main-content-side-thing-item-under-add:hover {
+  -webkit-box-shadow: 0px 0px 14px 0px rgb(0 0 0 / 20%);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 14px 0px rgb(0 0 0 / 20%);
+  border-radius: 5px;
+}
+.main-content-side-thing-item-under-favorite img,
+.main-content-side-thing-item-under-add img {
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  z-index: 5;
+  transform: translate(55%, 70%);
 }
 
 @media (max-width: 1300px) {
@@ -1685,4 +1731,7 @@ h6 {
 }
 .flex {
   display: flex;
+}
+.padding-right {
+  padding-right: 0px;
 }
